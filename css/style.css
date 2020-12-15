@@ -1,0 +1,28 @@
+:root {
+  --bg-grey: #d3d3d3;
+  --bg-dark-grey: #f5f5f5;
+  --dropshadow-grey: #888888;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg-grey);
+}
+
+.content-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--bg-dark-grey);
+  box-shadow: 0px 0px 8px var(--dropshadow-grey);
+  width: 70vw;
+  height: 70vh;
+  border-radius: 20px;
+}
