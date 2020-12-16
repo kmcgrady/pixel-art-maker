@@ -56,41 +56,42 @@ body {
   width: 70vw;
   height: 70vh;
   border-radius: 25px;
-  padding: 10px;
+  padding: 20px;
 }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  width: 100%;
-  height: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1140px;
+  height: 475px;
   background-color: white;
+  margin-bottom: 60px;
 }
 
 .grid-cell {
-  width: 100%;
-  height: 100%;
+  margin: 0;
+  width: 17px;
+  height: 17px;
   border: 1px solid var(--bg-dark-grey);
   background-color: white;
 }
 
 .bottom-content-container {
   display: flex;
+  padding: 0 30px;
 }
 
 .colors-container {
   width: 70%;
-  padding: 30px 0 0 30px;
   display: flex;
   flex-wrap: wrap;
+  margin-right: 40px;
 }
 
 .color {
   border: 2px solid white;
   flex-direction: column;
   margin-right: 1.5em;
-  margin-bottom: 1em;
   width: 30px;
   height: 30px;
   border-radius: 25%;
@@ -215,4 +216,8 @@ body {
   height: 60px;
   margin: 0 20px;
   border-radius: 25%;
+}
+
+.margin-bottom-1 {
+  margin-bottom: 1em;
 }
