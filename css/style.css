@@ -73,19 +73,24 @@ body {
 }
 
 .colors-container {
-  width: 65%;
+  width: 70%;
   padding: 30px 30px 0 30px;
   display: flex;
   flex-wrap: wrap;
 }
 
 .color {
+    border: 2px solid white;
   flex-direction: column;
   margin-right: 1.5em;
   margin-bottom: 1.5em;
   width: 30px;
   height: 30px;
   border-radius: 25%;
+}
+
+.color:hover {
+    border: 2px solid grey;
 }
 
 .color-dark-red {
@@ -102,6 +107,10 @@ body {
 
 .color-dark-orange {
   background-color: var(--color-dark-orange);
+}
+
+.color-orange {
+  background-color: var(--color-orange);
 }
 
 .color-flesh {
