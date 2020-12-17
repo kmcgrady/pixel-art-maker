@@ -6,19 +6,19 @@
   --dropshadow-grey: #888888;
 
   /* Pallate colors variables */
-  --color-dark-red: #b23232;
-  --color-red: #ff4848;
-  --color-pink: #ff6c6c;
-  --color-dark-orange: #e59b40;
-  --color-orange: #ffad48;
+  --color-dark-red: #800000;
+  --color-red: #ff0000;
+  --color-pink: #ff00ff;
+  --color-dark-orange: #cc3300;
+  --color-orange: #ff3300;
   --color-flesh: #ffc57e;
-  --color-lime: #e5de40;
-  --color-yellow: #fff748;
-  --color-light-yellow: #fffa91;
-  --color-green: #39cc4b;
-  --color-light-green: #48ff5e;
-  --color-royal-blue: #3248b2;
-  --color-blue: #4867ff;
+  --color-lime: #00ff00;
+  --color-yellow: #ffff00;
+  --color-light-yellow: #ffff99;
+  --color-green: #009900;
+  --color-light-green: #66ff66;
+  --color-royal-blue: #0000ff;
+  --color-blue: #000099;
   --color-light-purple: #91a3ff;
   --color-purple: #6432b2;
   --color-violet: #8f48ff;
