@@ -1,9 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap");
 
 :root {
   --bg-grey: #d3d3d3;
   --bg-dark-grey: #f5f5f5;
   --dropshadow-grey: #888888;
+  --border: 2px solid white;
+  --border-radius: 15px;
 
   /* Pallate colors variables */
   --color-dark-red: #800000;
@@ -32,10 +34,14 @@
   --color-dark-brown: #3a2119;
   --color-brown: #754233;
   --color-light-brown: #ac8d84;
+
+  /* Font variables*/
+  --primary-font: "Montserrat", sans-serif;
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--primary-font);
+  font-weight: 200;
   margin: 0;
 }
 
@@ -54,9 +60,8 @@ body {
   background-color: var(--bg-dark-grey);
   box-shadow: 0px 0px 8px var(--dropshadow-grey);
   width: 70vw;
-  height: 70vh;
   border-radius: 25px;
-  padding: 20px;
+  padding: 40px;
 }
 
 .grid-container {
@@ -65,7 +70,7 @@ body {
   width: 1140px;
   height: 475px;
   background-color: white;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 .grid-cell {
@@ -78,6 +83,7 @@ body {
 
 .bottom-content-container {
   display: flex;
+  flex-wrap: wrap;
   padding: 0 30px;
 }
 
@@ -85,20 +91,58 @@ body {
   width: 70%;
   display: flex;
   flex-wrap: wrap;
-  margin-right: 40px;
 }
 
 .color {
-  border: 2px solid white;
+  border: var(--border);
   flex-direction: column;
   margin-right: 1.5em;
   width: 30px;
   height: 30px;
-  border-radius: 25%;
+  border-radius: var(--border-radius);
 }
 
 .color:hover {
   border: 2px solid grey;
+}
+
+.current-color-container {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.current-color {
+  border: var(--border);
+  width: 60px;
+  height: 60px;
+  margin: 0 20px;
+  border-radius: var(--border-radius);
+}
+
+.btn-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+.btn {
+  margin-left: 20px;
+  font-family: var(--primary-font);
+  background-color: var(--color-black-20);
+  color: white;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: none;
+  padding: 15px 35px;
+  border: var(--border);
+  border-radius: var(--border-radius);
+}
+
+.btn:hover {
+  border: 2px solid grey;
+  background-color: var(--color-black-40);
 }
 
 .color-dark-red {
@@ -203,19 +247,6 @@ body {
 
 .color-light-brown {
   background-color: var(--color-light-brown);
-}
-
-.current-color-container {
-  display: flex;
-  align-items: center;
-}
-
-.current-color {
-  border: 2px solid white;
-  width: 60px;
-  height: 60px;
-  margin: 0 20px;
-  border-radius: 25%;
 }
 
 .margin-bottom-1 {
