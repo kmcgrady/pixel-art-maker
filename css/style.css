@@ -83,8 +83,8 @@ body {
 
 .bottom-content-container {
   display: flex;
-  flex-wrap: wrap;
-  padding: 0 30px;
+  /* padding: 0 30px; */
+  justify-content: space-between;
 }
 
 .colors-container {
@@ -118,14 +118,13 @@ body {
 .current-color-container {
   display: flex;
   align-items: center;
-  padding-left: 30px;
 }
 
 .current-color {
   border: var(--border);
   width: 60px;
   height: 60px;
-  margin: 0 20px;
+  margin-left: 20px;;
   border-radius: var(--border-radius);
 }
 
@@ -133,7 +132,7 @@ body {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 20px;
-  padding: 5px;
+  /* padding: 5px; */
 }
 
 .btn {
