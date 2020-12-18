@@ -89,14 +89,23 @@ body {
 
 .colors-container {
   width: 70%;
+}
+
+.colors-top {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.colors-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .color {
   border: var(--border);
-  flex-direction: column;
-  margin-right: 1.5em;
   width: 30px;
   height: 30px;
   border-radius: var(--border-radius);
@@ -247,8 +256,4 @@ body {
 
 .color-light-brown {
   background-color: var(--color-light-brown);
-}
-
-.margin-bottom-1 {
-  margin-bottom: 1em;
 }
