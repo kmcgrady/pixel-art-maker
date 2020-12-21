@@ -83,7 +83,6 @@ body {
 
 .bottom-content-container {
   display: flex;
-  /* padding: 0 30px; */
   justify-content: space-between;
 }
 
@@ -132,7 +131,6 @@ body {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 20px;
-  /* padding: 5px; */
 }
 
 .btn {
