@@ -23,11 +23,10 @@ function changeCurrentColor(color) {
     "var(" + currentColor + ")";
 }
 
-
 // var("")
 // background-color: var(--bg-grey);
 
-function clearConfirmation() {
+function clearGrid() {
   confirm("This can not be undone.\nAre you sure you would like to clear this grid?");
   window.location.reload();
 }
