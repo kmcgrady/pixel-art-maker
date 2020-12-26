@@ -16,15 +16,12 @@ for (let i = 0; i < 1500; i++) {
   // Replace the div with the new div (and current color)
   grid.appendChild(div);
 }
-// Take a look at this again
+// Function to change current color to color the user clicks on
 function changeCurrentColor(color) {
   currentColor = "--" + color;
   document.getElementById("currentColor").style.backgroundColor =
     "var(" + currentColor + ")";
 }
-
-// var("")
-// background-color: var(--bg-grey);
 
 function clearGrid() {
   confirm("This can not be undone.\nAre you sure you would like to clear this grid?");
