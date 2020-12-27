@@ -17,13 +17,15 @@ for (let i = 0; i < 1500; i++) {
   grid.appendChild(div);
 }
 // Function to change current color to color the user clicks on
+// Takes in a param of color
 function changeCurrentColor(color) {
   currentColor = "--" + color;
   document.getElementById("currentColor").style.backgroundColor =
     "var(" + currentColor + ")";
 }
 
+// Function to reload page and clear grid
 function clearGrid() {
-  confirm("This can not be undone.\nAre you sure you would like to clear this grid?");
+  confirm("This can not be undone.\nAre you sure you would like to clear this canvas?");
   window.location.reload();
 }
