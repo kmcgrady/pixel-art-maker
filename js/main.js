@@ -29,3 +29,12 @@ function clearGrid() {
   confirm("This can not be undone.\nAre you sure you would like to clear this canvas?");
   window.location.reload();
 }
+
+function generatePDF() {
+  // Choose the element that our PDF rendered in.
+  const element = document.getElementById("grid-canvas");
+  // Choose the element and save the PDF for our user.
+  html2pdf()
+    .from(element)
+    .save();
+}

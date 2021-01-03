@@ -10,12 +10,13 @@
   <body>
     <div class="container">
       <div class="content-container">
-        <div class="grid-container"></div>
+        <div class="grid-container" id="grid-canvas"></div>
         <div class="btn-container">
           <button class="btn btnClear" id="btnClear" onclick="clearGrid()">
             Clear
           </button>
-          <button class="btn btnSave" id="btnSave">Save</button>
+          <!-- <button class="btn btnSave" id="btnSave">Save</button> -->
+          <button class="btn btnSave" id="btnSave" onclick="generatePDF()">Save to PDF</button>
         </div>
         <div class="bottom-content-container">
           <div class="colors-container">
@@ -213,7 +214,7 @@
         </div>
       </div>
     </div>
-
+    <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
