@@ -1,8 +1,8 @@
 // Declare a empty scring variable for currentColor to be used in function
-var currentColor = "";
+let currentColor = "";
 
 // Hook the grid container so that we can inject the grid cells into it with a loop
-var grid = document.getElementsByClassName("grid-container")[0];
+let grid = document.getElementsByClassName("grid-container")[0];
 // For loop to inject all the grid cells into the grid container
 for (let i = 0; i < 1500; i++) {
   // Create an element and save it into a variable called div
