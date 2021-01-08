@@ -272,6 +272,7 @@ body {
   border-radius: 6px;
   padding: 5px 0;
   bottom: 40px;
+  left: 0;
 
   /* Position the tooltip */
   position: absolute;
