@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Pixel Artboard - Kevin Meldau</title>
+    <meta name="description" content="Pixel Art Maker" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content-container">
+        <div class="grid-container" id="grid-canvas"></div>
+        <div class="btn-container">
+          <button class="btn btnClear" id="btnClear" onclick="clearGrid()">
+            Clear
+          </button>
+          <!-- <button class="btn btnSave" id="btnSave">Save</button> -->
+          <button class="btn btnSave" id="btnSave" onclick="generatePDF()">Save to PDF</button>
+        </div>
+        <div class="bottom-content-container">
+          <div class="colors-container">
+            <div class="colors-top">
+              <button
+                id="color-dark-red"
+                class="color color-dark-red tooltip"
+                onclick="changeCurrentColor(id)"
+              >
+                <span class="tooltiptext">Dark Red</span>
+            </button>
+              <button
+                id="color-red"
+                class="color color-red tooltip"
+                onclick="changeCurrentColor(id)"
+              >
+                <span class="tooltiptext">Red</span>
+              </button>
+              <button
+                id="color-pink"
+                class="color color-pink tooltip"
+                onclick="changeCurrentColor(id)"
+              >
+                <span class="tooltiptext">Pink</span>
+              </button>
+              <button
+                id="color-dark-orange"
+                class="color color-dark-orange tooltip"
+                onclick="changeCurrentColor(id)"
+              >
+                <span class="tooltiptext">Dark Orange</span>
+              </button>
+              <button
+                id="color-orange"
+                class="color color-orange tooltip"
+                onclick="changeCurrentColor(id)"
+              >
+                <span class="tooltiptext">Orange</span>
+              </button>
+              <button
+                id="color-flesh"
+                class="color color-flesh tooltip"
+                onclick="changeCurrentColor(id)"
+              >
+                <span class="tooltiptext">Flesh</span>
+              </button>
+              <button
+                id="color-lime"
+                class="color color-lime tooltip"
+                onclick="changeCurrentColor(id)"
+              >
+                <span class="tooltiptext">Lime</span>
+              </button>
+              <button
+                id="color-yellow"
+                class="color color-yellow tooltip"
+                onclick="changeCurrentColor(id)"
+              >
+                <span class="tooltiptext">Yellow</span>
+              </button>
+              <button
+                id="color-light-yellow"
+                class="color color-light-yellow tooltip"
+                onclick="changeCurrentColor(id)"
+              >
+                <span class="tooltiptext">Light Yellow</span>
+              </button>
+              <button
+                id="color-green"
+                class="color color-green tooltip"
+                onclick="changeCurrentColor(id)"
+              >
+                <span class="tooltiptext">Green</span>
+              </button>
+              <button
+                id="color-light-green"
+                class="color color-light-green tooltip"
+                onclick="changeCurrentColor(id)"
+              >
+                <span class="tooltiptext">Light Green</span>
+              </button>
+              <button
+                id="color-royal-blue"
+                class="color color-royal-blue tooltip"
+                onclick="changeCurrentColor(id)"
+              >
+                <span class="tooltiptext">Royal Blue</span>
+              </button>
+              <button
+                id="color-blue"
+                class="color color-blue tooltip"
+                onclick="changeCurrentColor(id)"
+              >
+                <span class="tooltiptext">Blue</span>
+              </button>
+            </div>
+            <div class="colors-bottom">
+              <button
+                id="color-light-purple"
+                class="color color-light-purple tooltip"
+                onclick="changeCurrentColor(id)"
+              >
+                <span class="tooltiptext">Light Purple</span>
+              </button>
+              <button
+                id="color-purple"
+                class="color color-purple tooltip"
+                onclick="changeCurrentColor(id)"
+              >
+                <span class="tooltiptext">Purple</span>
+              </button>
+              <button
+                id="color-violet"
+                class="color color-violet tooltip"
+                onclick="changeCurrentColor(id)"
+              >
+                <span class="tooltiptext">Violet</span>
+              </button>
+              <button
+                id="color-light-violet"
+                class="color color-light-violet tooltip"
+                onclick="changeCurrentColor(id)"
+              >
+                <span class="tooltiptext">Light Violet</span>
+              </button>
+              <button
+                id="color-black"
+                class="color color-black tooltip"
+                onclick="changeCurrentColor(id)"
+              >
+                <span class="tooltiptext">Black</span>
+              </button>
+              <button
+                id="color-black-80"
+                class="color color-black-80 tooltip"
+                onclick="changeCurrentColor(id)"
+              >
+                <span class="tooltiptext">Black 80%</span>
+              </button>
+              <button
+                id="color-black-60"
+                class="color color-black-60 tooltip"
+                onclick="changeCurrentColor(id)"
+              >
+                <span class="tooltiptext">Black 60%</span>
+              </button>
+              <button
+                id="color-black-40"
+                class="color color-black-40 tooltip"
+                onclick="changeCurrentColor(id)"
+              >
+                <span class="tooltiptext">Black 40%</span>
+              </button>
+              <button
+                id="color-black-20"
+                class="color color-black-20 tooltip"
+                onclick="changeCurrentColor(id)"
+              >
+                <span class="tooltiptext">Black 20%</span>
+              </button>
+              <button
+                id="color-white"
+                class="color color-white tooltip"
+                onclick="changeCurrentColor(id)"
+              >
+                <span class="tooltiptext">White</span>
+              </button>
+              <button
+                id="color-dark-brown"
+                class="color color-dark-brown tooltip"
+                onclick="changeCurrentColor(id)"
+              >
+                <span class="tooltiptext">Dark Brown</span>
+              </button>
+              <button
+                id="color-brown"
+                class="color color-brown tooltip"
+                onclick="changeCurrentColor(id)"
+              >
+                <span class="tooltiptext">Brown</span>
+              </button>
+              <button
+                id="color-light-brown"
+                class="color color-light-brown tooltip"
+                onclick="changeCurrentColor(id)"
+              >
+                <span class="tooltiptext">Light Brown</span>
+              </button>
+            </div>
+          </div>
+          <div class="current-color-container">
+            <p>The current color is</p>
+            <div id="currentColor" class="current-color"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
